@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nether Portal Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://media.tenor.com/dl9I8ZsL7tsAAAAC/nether-portal.gif">
+</head>
+<body>
+    <div class="flexbox">
+        <div class="flexbox-item1">
+            <div class="topBar"><h1>NETHER PORTAL CALCULATOR</h1></div>
+            <div class="grid-container">
+                <div class="grid-item header"><h3>OVERWORLD COORDINATES</h3></div>
+                <div class="grid-item label xLabel"><h3>X</h3></div>
+                <div class="grid-item label yLabel"><h3>Y</h3></div>
+                <div class="grid-item label zLabel"><h3>Z</h3></div>
+                <div class="grid-item input"><input type="text" class="xInput overworldCoords" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)"></div>
+                <div class="grid-item input"><input type="text" class="yInput overworldCoords" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)"></div>
+                <div class="grid-item input"><input type="text" class="zInput overworldCoords" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)"></div>
+            </div>
+            <br>
+            <div class="grid-container">
+                <div class="grid-item header"><h3>NETHER COORDINATES</h3></div>
+                <div class="grid-item label xLabel"><h3>X</h3></div>
+                <div class="grid-item label yLabel"><h3>Y</h3></div>
+                <div class="grid-item label zLabel"><h3>Z</h3></div>
+                <div class="grid-item input"><input type="text" class="xInput netherCoords" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)"></div>
+                <div class="grid-item input"><input type="text" class="yInput netherCoords" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)"></div>
+                <div class="grid-item input"><input type="text" class="zInput netherCoords" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)"></div>
+            </div>
+            <div class="modalFoot">
+                <button type="submit" class="reset" id="resetBtn" onclick="reset()">RESET</button>
+                <button type="submit" class="getCords" id="getCoordinates" onclick="getCoords()">GET COORDINATES</button>
+                <p id="copyOverworldCoord">COORDINATES: [X,Y,Z]</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This is a personal project I created. This site has no affiliation with Mojang</p>
+        <p>Nether Portal Calculator V1.0 by Derek Gorman.</p>
+    </div>
+    <script src="js/index.js" defer></script>
+</body>
+</html>

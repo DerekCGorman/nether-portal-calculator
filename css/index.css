@@ -1,0 +1,88 @@
+body{
+    background-color: #161220;
+    background-image: url('../imgs/6.png');
+    background-repeat: no-repeat;
+    margin: auto;
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: #e9c87b;
+}
+
+.flexbox{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 80px;
+    justify-content:center;
+    text-align: center;
+}
+
+.flexbox-item1{
+    height: 750px;
+    width: 1100px;
+    background-color: #233239;
+    align-self: center;
+}
+
+.topBar{
+    margin-top: 60px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: center;
+    grid-template-areas: "header header header";
+}
+
+.header{
+    grid-area: header;
+    background-color: #161220;
+    border-bottom: 2px solid #eee;
+}
+
+.input{
+    background-color: #161220;
+}
+
+.label{
+    background-color: #d3d5d3;
+    color:  #233239;
+}
+
+input[type="text"]{
+    height: 50px;
+    width: 100px;
+    text-align: center; 
+    font-size: 20px;
+    border:none;
+}
+
+.modalFoot{
+    bottom: 100%;
+    width: 100%;
+    height: 50px;
+    margin-top: 80px;
+}
+
+button{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background-color: #c27670;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Wix Madefor Text', sans-serif;
+    color: #eee;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: #161220;
+    color: #eee;
+    position: sticky;
+}

@@ -94,9 +94,9 @@
                 <label for="z-Label">Z</label>
               </div>
               <div class="coord-inputs">
-                <input type="text" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
-                <input type="text" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
-                <input type="text" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
+                <input type="text" class="overworldCoords" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
+                <input type="text" class="overworldCoords" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
+                <input type="text"  class="overworldCoords" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
               </div>
             </div>
       
@@ -110,19 +110,19 @@
                 <label for="z-Label">Z</label>
               </div>
               <div class="coord-inputs">
-                <input type="text" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
-                <input type="text" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
-                <input type="text" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
+                <input type="text" class="netherCoords" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
+                <input type="text" class="netherCoords" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
+                <input type="text" class="netherCoords" name="" id="" value="0" onFocus="value=''" onkeypress="return restrictAlphabet(event)" />
               </div>
             </div>
       
             <div class="btn-section">
-              <button>RESET</button>
-              <button>GET COORDINATES</button>
-              <button>SAVE ENTRY</button>
+              <button id="resetBtn">RESET</button>
+              <button id="getCoordinates">GET COORDINATES</button>
+              <button id="saveData">SAVE ENTRY</button>
             </div>
             <div class="btn-section">
-              <p>COORDINATES: [X,Y,Z]</p>
+              <p id="copyOverworldCoord">COORDINATES: [X,Y,Z]</p>
             </div>
           </main>
         </div>

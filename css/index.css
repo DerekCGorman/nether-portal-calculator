@@ -39,3 +39,7 @@ body{
     color: var(--font-color);
     text-decoration: none;
 }
+
+.navbar .links a:hover{
+    color: var(--thrid-color);
+}

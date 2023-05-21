@@ -3,6 +3,12 @@
     --secondary-color: #233239;
     --font-color: #e9c87b;
     --thrid-color: #d3d5d3;
-    --background-image: '../imgs/6.png';
+    --background-image: url('../imgs/6.png');
+}
 
+body{
+    background: var(--background-image);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

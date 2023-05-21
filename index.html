@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nether Portal Calculator</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="https://media.tenor.com/dl9I8ZsL7tsAAAAC/nether-portal.gif">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="icon"
+      href="https://media.tenor.com/dl9I8ZsL7tsAAAAC/nether-portal.gif"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="navbar">
-        <nav class="links">
-            <a href="#home">Home</a>
-            <a href="#past">Past Entries</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav class="links">
+        <a href="#home">Home</a>
+        <a href="#past">Past Entries</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
     <main class="main-container">
-        <h1>NETHER PORTAL CALCULATOR</h1>
-        <div class="content-holder">
-            
+      <h1>NETHER PORTAL CALCULATOR</h1>
+      <div class="coord-data">
+        <div class="header">
+          <h2>Overworld Coordinates</h2>
         </div>
+        <div class="labels">
+          <label for="x-Label">X</label>
+          <label for="y-Label">Y</label>
+          <label for="z-Label">Z</label>
+        </div>
+        <div class="coord-inputs">
+          <input type="text" name="" id="" placeholder="0"/>
+          <input type="text" name="" id="" placeholder="0"/>
+          <input type="text" name="" id="" placeholder="0"/>
+        </div>
+      </div>
+
+      <div class="coord-data">
+        <div class="header">
+          <h2>Nether Coordinates</h2>
+        </div>
+        <div class="labels">
+          <label for="x-Label">X</label>
+          <label for="y-Label">Y</label>
+          <label for="z-Label">Z</label>
+        </div>
+        <div class="coord-inputs">
+          <input type="text" name="" id="" placeholder="0"/>
+          <input type="text" name="" id="" placeholder="0"/>
+          <input type="text" name="" id="" placeholder="0"/>
+        </div>
+      </div>
+
+      <div class="btn-section">
+        <button>RESET</button>
+        <button>GET COORDINATES</button>
+        <button>SAVE ENTRY</button>
+      </div>
+      <div class="btn-section">
+        <p>COORDINATES: [X,Y,Z]</p>
+      </div>
     </main>
 
-
     <footer class="footer">
-        <p>This is a personal project I created. This site has no affiliation with Mojang</p>
-        <p>Nether Portal Calculator V1.1 by Derek Gorman.</p>
+      <p>
+        This is a personal project I created. This site has no affiliation with
+        Mojang
+      </p>
+      <p>Nether Portal Calculator V1.1 by Derek Gorman.</p>
     </footer>
     <script src="js/index.js" defer></script>
-</body>
+  </body>
 </html>

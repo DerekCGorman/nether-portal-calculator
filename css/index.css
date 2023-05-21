@@ -136,6 +136,35 @@ h2 {
     border-radius: 25px;
   }
 
+.table-head{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.table-label{
+    font-size: var(--button-font-size);
+}
+
+.table-data{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deleteEntry{
+    color: var(--font-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.deleteEntry:hover{
+    text-decoration: underline;
+    color: var(--light-accent-color)
+}
+
 .main-container {
   color: var(--font-color);
   width: 50%;

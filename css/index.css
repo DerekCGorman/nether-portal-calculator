@@ -23,7 +23,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: var(--main-font);
-    height: 100vh;}
+    height: 100vh;
+    overflow: hidden;}
+    
 h1{
     font-size: var(--header-font-size);
     font-weight: 400;
@@ -39,23 +41,78 @@ h2{
     background-color: var(--primary-color);
     width: 100%;
     height: 100px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 15px 10px rgba(0,0,0,0.4);}
-.navbar .links{
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0px 16px;
-    display: flex;
-    justify-content: space-around;}
-.navbar .links a{
-    font-size: var(--nav-font-size);
-    color: var(--font-color);
-    text-decoration: none;}
-.navbar .links a:hover{
-    color: var(--thrid-color);}
+    box-shadow: 0px 15px 10px rgba(0,0,0,0.4);
+    z-index: 2;
+    padding: 60px 0;
+    cursor: pointer;
+}
 
+.navbar .imgs:active{
+    display: inline-block;
+    animation-fill-mode: forwards;
+    transform-origin: top left;
+    animation: 0.2s shake ease-in-out;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateX(5px) translateY(2px);
+    }
+    50%{
+        transform: translateX(-5px) translateY(-2px);
+    }
+    75%{
+        transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+.navbar .imgs img{
+    width: 70px;
+    position: relative;
+}
+
+.navbar .imgs{
+    display: inline;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.navbar .imgs::before{
+    content: "";
+    background-image: url('../imgs/nether-portal.gif');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100px 100px;
+    top: -5px;
+    left: -5px;
+    z-index: 0;
+    display: inline-block;
+    opacity: 1;
+    border-radius: 25px;
+}
+
+.navbar .imgs::after{
+    content: "";
+    position: absolute;
+    width: 107%;
+    height: 107%;
+    top: -8px;
+    left: -8px;
+    z-index: -2;
+    border-radius: 25px;
+    background: var(--lava-gradient);
+}
 
 
 .main-container{
